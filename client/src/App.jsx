@@ -1,8 +1,15 @@
+import { Route, Routes } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
+import Chat from '@/components/chat';
 function App() {
 
   return (
     <div className="app">
-      app
+      <BrowserRouter>
+        <Routes>
+          <Route path="/chat" element={<Chat/>} />\
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
